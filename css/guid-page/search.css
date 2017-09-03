@@ -1,0 +1,85 @@
+html,body{
+	background: #eee;
+}
+
+
+/***  =======  搜索内容样式 BEGIN  ======= ***/
+.searchContent{
+	overflow: hidden;
+}
+.searchContent input{
+	float: left;
+}
+.searchContent input[type='text']{
+	width: 80%;
+	height: 34px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+}
+
+.searchContent input[type='button']{
+	width: 20%;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+
+
+.searchMain{
+	padding-bottom: 0;
+	background: #fff;
+	overflow:hidden;
+}
+.searchMain-tipList{
+	overflow: hidden;
+}
+.searchMain-tipList li{
+	float: left;
+	color: #242424;
+	padding:6px 12px;
+	border:1px solid #d5d5d5;
+	border-radius:26px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.searchMain-change{
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.searchMain-change img{
+	width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-top: 9px;
+}
+.searchMain-history li{
+	position: relative;
+	height: 42px;
+	line-height: 43px;
+	padding-left: 26px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.searchMain-history li:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top:12px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/icon/time.png);
+	background-size: 20px 20px;
+}
+.searchMain-clearHistory{
+	border:none;
+}
+.searchMain-clearHistory img{
+	width: 16px;
+	height: 16px;
+	margin-top:13px;
+}
+/***  =======  搜索内容样式 END  ======= ***/

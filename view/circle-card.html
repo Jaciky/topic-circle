@@ -1,0 +1,132 @@
+<html><head>
+    <title>话题圈</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+     <link rel="stylesheet" type="text/css" href="../css/guid-page/circle-card.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/swiper/swiper.min.css">
+
+</head>
+
+<body style="">
+   	<!--头部-->
+	<header class="common-header">
+		<a href="javascript:;" class="J_cancel header-left">取消</a>	
+		<h4>发表帖子</h4>
+		<span class="header-right theme-green">发表</span>
+	</header>
+	
+	<section class="mt10  appraiseMain">
+		<div class="pAll20">
+			<textarea class="input-editor" rows="4" id="J_txt" placeholder="写点什么吧..."></textarea>
+			<div class="appraiseMain-more"> 
+				<span class="J_emoji fl"></span>
+				<img src="../images/icon/topic-editor.png" class="J_topic fl">
+			</div>
+		</div>
+		<!--qq表情列表-->
+		<div class="swiper-container swiper-emoji  hide">
+	        <div class="swiper-wrapper"></div>
+	        <div class="swiper-pagination"></div>
+	    </div>
+
+
+		<!--上传图片-->
+		<div class="uploadPhotoMain pAll20">
+
+			<!-- <div class="uploadPhotoMain-list fl"> -->
+				<!-- <div class="showPicture"></div> -->
+			<!-- </div> -->
+
+			
+			<div class="uploadPhoto  fl">
+				<input type="file">
+			</div>
+		</div>
+	</section>
+
+	<!--添加话题-->
+	<section class="addTopic hide">
+
+
+		<div class="addTopic-header plr15">
+			<div class="fl addTopic-header-left">
+				<img src="../images/icon/topic-editor.png">
+				<input type="text" placeholder="输入你想添加的话题" class="fz16">
+			</div>
+			<span class="fz14 addTopic-header-close J_cancelTopic">取消</span>
+		</div>
+		<p class="hotTopics">热门话题</p>
+
+		<ol class="addTopic-list plr15 J_addTopicList">
+			<li>
+				<img src="../images/topic/1.jpg">
+				<span class="fz16">台风天鸽</span>
+			</li>
+			<li>
+				<img src="../images/topic/2.jpg">
+				<span class="fz16">处暑一起来写诗</span>
+			</li>
+			<li>
+				<img src="../images/topic/3.png">
+				<span class="fz16">压箱底的情话</span>
+			</li>
+
+			<li>
+				<img src="../images/topic/4.jpeg">
+				<span class="fz16">长大后才知道的事</span>
+			</li>
+			<li>
+				<img src="../images/topic/5.jpg">
+				<span class="fz16">哪些娱乐明星篮球打得好</span>
+			</li>
+			<li>
+				<img src="../images/topic/6.jpg">
+				<span class="fz16">岁月是把杀猪刀</span>
+			</li>
+			<li>
+				<img src="../images/topic/7.jpg">
+				<span class="fz16">最厉害的事</span>
+			</li>
+			<li>
+				<img src="../images/topic/8.jpg">
+				<span class="fz16">8.9新疆地震</span>
+			</li>
+			<li>
+				<img src="../images/topic/9.jpg">
+				<span class="fz16">周一来斗图</span>
+			</li>
+			<li>
+				<img src="../images/topic/9.jpg">
+				<span class="fz16">鉴别渣男渣女</span>
+			</li>
+		</ol>
+	</section>
+
+	<!--弹层集合-->
+	<div class="layer">
+		<!--遮罩层-->
+		<div class="layer-shade"></div>
+		<!--弹层-->
+		<div class="layer-common-style layer-second layer-third show">
+			<p>是否退出编辑？</p>
+			<div class="second-konw">
+				<span class="J_cancel">取消</span>
+				<a href="javascript:history.back(-1)">退出</a>
+			</div>
+		</div>
+	</div>
+	<!--END-->
+</body>
+
+<script type="text/javascript" src="../plugins/jquery.min.js"></script>
+<script type="text/javascript" src="../plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/guid-page/circle-card.js"></script>
+<script type="text/javascript">
+	uploadPicture.init({
+		nodeFile:document.querySelector(".uploadPhoto input"),
+		nodeInsert:document.querySelector(".uploadPhotoMain")
+	})
+</script>
+</html>

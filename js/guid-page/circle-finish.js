@@ -1,0 +1,10 @@
+$(function(){
+	//显示创建帖子
+	$(".J_createCircle").on('click',function(){
+			$(".cf-createCard").show();
+	})
+	//关闭创建帖子
+	$(".J_close").on('click',function(){
+			$(".cf-createCard").hide();
+	})
+})

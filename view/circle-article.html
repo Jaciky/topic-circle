@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>话题圈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/guid-page/circle-article.css" />
+</head>
+
+<body>
+	
+	<div class="J_contentPage">
+	    <!--头部-->
+	    <header class="common-header ">
+	        <a href="javascript:;" class="J_cancel header-left">取消</a>
+	        <h4>编辑文章</h4>
+	        <span class="theme-green J_preview header-right">预览</span>
+	    </header>
+	    <section class="circleArticle">
+	        <div class="plr15">
+	            <input type="text" placeholder="添加标题(必填)" class="circleArticle-title" />
+	            <textarea type="text" placeholder="开始撰写你的内容" class="circleArticle-content mt10"></textarea>
+	        </div>
+
+			<!--图片上传描述-->
+			<div class="J_uploadMain">
+				<div class="circleArticle-addPicture">
+			        <div class="addPicture-area">
+			            <div class="addPicture-round"></div>
+			            <input  type="file" onchange="uploadPicture(this)"/>
+			        </div>
+					<div class="addPicture-show pAll15 hide">
+						<img src="" class="fl  J_picture" />
+						<textarea placeholder="为图片添加描述" class="fl"></textarea>
+						<div class="J_delete" onclick="showLayer(this)"></div>
+					</div>
+			    </div>
+			</div>
+	    </section>
+	</div>
+
+
+    <!--预览内容-->
+    <div class="J_previewPage hide">
+        <header class="common-header ">
+            <a href="javascript:;" class="J_returnEdit header-left">返回编辑</a>
+            <h4>预览</h4>
+            <a href="circle-finish.html"><span class="header-right theme-green">发布</span></a>
+        </header>
+        <section class="circleArticlePreview">
+            <!-- 主题选择 -->
+            <div class="circleArticlePreview-theme plr15">
+                <p class="pt15">
+                    <span>更换模版</span>
+                    <i></i>
+                </p>
+                <ul class="theme-templateList pt15 J_template">
+                    <li class="active">经典</li>
+                    <li>新春</li>
+                </ul>
+            </div>
+            <!--主题内容-->
+            <div class="circleArticlePreview-themeCotent plr15">
+                <h3>标题</h3>
+                <div class="themeCotent-time-name fz14 mt20">
+                    <span class="theme-gray">2017年8月29日</span>&nbsp;
+                    <span class="theme-blue">扬尘美景</span>
+                </div>
+                <p class="fz16 mtb20 themeCotent-detail">文章内容测试</p>
+                <div class="plr15 themeCotent-pictureItem">
+                    <!-- <img src="" class="dpImg" /> -->
+                </div>
+            </div>
+        </section>
+    </div>
+	<!--END-->
+
+    <!--弹层集合-->
+    <div class="layer">
+        <!--遮罩层-->
+        <div class="layer-shade"></div>
+        <!--弹层-->
+        <div class="layer-common-style layer-second layer-third layer-cancle hide">
+            <p>是否退出编辑？</p>
+            <div class="second-konw">
+                <span class="J_cancelLayer">取消</span>
+                <a href="javascript:history.back(-1)">退出</a>
+            </div>
+        </div>
+        <!--弹层-->
+        <div class="layer-common-style layer-second layer-third hide  layer-picture">
+            <p>确认删除这张图片吗？图片关联的文字也将被删除</p>
+            <div class="second-konw">
+                <span class="J_cancelLayer">取消</span>
+                <a href="javascript:;" class="J_deletePicture">删除</a>
+            </div>
+        </div>
+    </div>
+    <!--提示信息-->
+    <div class="J_promptInfo promptInfo">
+    	<span></span>
+    </div>
+    <!--END-->
+</body>
+
+</html>
+<!-- <script type="text/javascript" src="../js/product/zepto/zepto.min.js"></script> -->
+<!-- <script type="text/javascript" src="../js/product/zepto/touch.js"></script> -->
+<script type="text/javascript" src="../plugins/jquery.min.js"></script>
+<script type="text/javascript" src="../js/guid-page/circle-article.js"></script>

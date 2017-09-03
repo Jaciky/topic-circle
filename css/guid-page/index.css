@@ -1,0 +1,288 @@
+body{
+	background: #eee;
+}
+
+
+/***========  头部样式  BEGIN ========***/
+.header{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	z-index: 10000;
+}
+.header .header-top{
+	height: 48px;
+	line-height: 48px;
+	overflow: hidden;
+}
+
+.header span.fz16{
+	color:#fff;
+}
+
+
+
+.header-nav{
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	overflow: hidden;
+}
+.header-nav li{
+	position: relative;
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+
+}
+.header-nav li.active{
+	color: #36b70a;
+}
+.header-nav li.active:after{
+	content: "";
+	position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+	width: 64px;
+	height: 2px;
+	background: #36b70a;
+}
+
+/***========  头部样式  END ========***/
+
+section{display: none;}
+.mt98{margin-top:98px;}
+
+
+/***========  动态相关样式  BEGIN ========***/
+
+
+
+.sectionTrends-trendsList li{
+	background: #fff;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.trendsList-liHeader{
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+}
+.trendsList-liHeader img{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.trendsList-liSection h4.fz16{
+	text-align: left;
+	color: #1e1e1e;
+    line-height: 24px;
+    overflow: hidden;
+}
+.trendsList-liSection ul{
+	overflow: hidden;
+}
+.trendsList-liSection ul li{
+	width: 32%;
+	float: left;
+}
+.trendsList-liSection ul li:nth-child(2){
+	margin: 0 2%;
+}
+.trendsList-liSection ul li img{
+	display: block;
+	width: 100%;
+	max-height: 200px;
+}
+.liSection-title{
+	line-height: 22px;
+	overflow: hidden;
+}
+.liSection-title h4{
+	display: inline;
+	vertical-align: middle;
+	font-weight: bold;
+
+}
+.liSection-title span{
+	vertical-align: middle;
+}
+.liSection-comment{
+	position: relative;
+	font-weight: 400;
+	color: #aaa;
+	padding:6px 0 20px 24px; 
+	line-height: 18px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.liSection-comment:before{
+	content: "";
+    background-image: url(../../images/message.png);
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    left: 1px;
+    top: 8px;
+    background-size: auto 8px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+.txt-username{
+	color:#666;
+}
+.liSection-info .fr i,.liSection-info .fr span{
+	display: inline-block;
+	vertical-align: middle;
+}
+/***========  动态相关样式  END ========***/
+
+
+
+/***========  发现相关样式  BEGIN ========***/
+
+.sectionFind-menu{
+	background: #fff;
+	margin-top:10px;
+	padding-bottom: 16px;
+	overflow: hidden;
+}
+.sectionFind-menu li{
+	float: left;
+	width: 20%;
+	height: 60px;
+	padding-top:8px;
+	text-align: center;
+}
+.sectionFind-menu li img{
+	width: 42px;
+	height: 42px;
+	display: block;
+	margin:0 auto 4px;
+}
+.sectionFind-menu li:nth-child(1n+6){
+	margin-top:12px;
+}
+
+
+/*  圈子排行 */
+.sectionFind-sort{
+	background: #fff;
+	overflow: hidden;
+}
+
+
+.sectionFind-sort .sectionCircle-list{
+	padding: 0 12px;
+}
+.list-price{
+	width: 64px;
+	height: 64px;
+	position: relative;
+}
+.list-price span{
+	position: absolute;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    -webkit-border-radius: 6px 0 0 0;
+    background: #f04e2e;
+}
+.sectionFind-sort .sectionCircle-list li:last-child{border-bottom: 0;}
+.list-allCircle{
+	margin-top:4px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 16px;
+	border-top: 1px solid #e5e5e5;
+}
+.concernActive{
+	color: #242424;
+	border:1px solid #e5e5e5;
+}
+.list-li-center{
+	position: absolute;
+	top:20px;
+	width: 100%;
+	padding:0 66px 0 80px;
+	box-sizing: border-box;
+}
+
+
+
+
+/***========  发现相关样式  END ========***/
+
+
+
+
+
+/***========  圈子相关样式  BEGIN ========***/
+.sectionCircle-list{
+	background: #fff;
+	overflow: hidden;
+}
+
+.sectionCircle-list li{
+	position: relative;
+	padding: 15px 0;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+.sectionCircle-list li .sectionCircle-left{
+	width: 64px;
+    height: 64px;
+    -webkit-border-radius: 6px;
+}
+
+
+.sectionCircle-add{
+	border-bottom: 0 !important;
+}
+.sectionCircle-add .sectionCircle-left{
+	position: relative;
+    text-align: center;
+    line-height: 64px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+}
+.sectionCircle-add .sectionCircle-left:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top:50%;
+	width: 30px;
+	height: 1px;
+	margin-left: -15px;
+	background: #000;
+}
+.sectionCircle-add .sectionCircle-left:after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top:50%;
+	width: 1px;
+	height: 32px;
+	margin-top: -16px;
+	background: #000;
+}
+.sectionCircle-add span{
+	height: 64px;
+	line-height: 64px;
+}
+/***========  圈子相关样式  END ========***/

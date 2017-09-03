@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="41px" viewBox="0 0 60 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>直播</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="发布选项2" transform="translate(-121.000000, -685.000000)" fill="#F27E3E">
+            <g id="Group-2" transform="translate(-1.000000, 40.000000)">
+                <path d="M166,656.322626 L166,653.49846 C166,649.084935 162.421153,645.5 158.006422,645.5 L129.993578,645.5 C125.582049,645.5 122,649.081032 122,653.49846 L122,677.50154 C122,681.915065 125.578847,685.5 129.993578,685.5 L158.006422,685.5 C162.417951,685.5 166,681.918968 166,677.50154 L166,674.677161 L175.526918,681.613291 C179.099765,684.214524 182,682.7415 182,678.319725 L182,652.680063 C182,648.261034 179.101902,646.783707 175.526918,649.386496 L166,656.322626 Z" id="直播"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,218 @@
+html,body{
+    background: #fafafa;
+}
+
+
+.circleArticle-title{
+	display: block;
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	font-size: 24px;
+    color: #242424;
+    border:none;
+    border-bottom: 1px solid #e0e0e0;
+    background: none;
+}
+.circleArticle-content{
+	width: 100%;
+   	height: 100px;
+    color: #242424;
+    line-height: 22px;
+    font-size: 16px;
+    border:none;
+    background-color: transparent;
+	outline: 0;
+    resize: none;
+}
+.addPicture-area{
+    width: 100%;
+    height: 52px;
+    background: #ededed;
+    overflow: hidden;
+    position: relative;
+}
+.addPicture-area input{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1000;
+}
+.addPicture-round{
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #aaa;
+    margin: 12px auto;
+}
+.addPicture-round:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -7px;
+    width: 15px;
+    height: 1px;
+    background: #aaa;
+    border-radius: 2px;
+}
+.addPicture-round:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -6px;
+    width: 1px;
+    height: 14px;
+    background: #aaa;
+    border-radius: 2px;
+}
+
+
+/***===========   预览模版样式 BEGIN ===========***/
+
+.circleArticlePreview-theme{
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+.circleArticlePreview-theme{
+	position: relative;
+    font-size: 16px;
+    color: #242424;
+}
+.circleArticlePreview-theme i,.circleArticlePreview-theme span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.circleArticlePreview-theme i{
+	margin-top:6px;
+	margin-left: 4px;
+	width: 8px;
+	height: 8px;
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	transform:rotate(45deg);
+}
+.theme-templateList{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+    cursor: pointer;
+}
+.theme-templateList li.active{
+    border:1px solid #36b70a;
+}
+.theme-templateList li{
+	float: left;
+	width: 49%;
+	height: 80px;
+	line-height: 80px;
+	border:1px solid #d5d5d5;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.theme-templateList li:first-child{
+	background: #f3f3f3;
+	margin-right: 2%;
+}
+.theme-templateList li:last-child{
+	background: url(../../images/template-spring-head.jpg) no-repeat;
+	background-size:49% 80px;
+}
+
+
+.circleArticlePreview-themeCotent h3{
+    margin: 24px auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 24px;
+    color: #1e1e1e;
+    font-weight: 400;
+}
+.themeSpring{
+    height: 240px;
+    background: url(../../images/template-spring-head.jpg);
+    background-size: 100% 100%;
+}
+.themeSpring h3{
+    text-align: center;
+    margin-top:60px
+}
+.themeSpring .themeCotent-time-name{
+    margin-bottom: 188px;
+}
+
+.addPicture-show{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.addPicture-show img{
+    width: 72px;
+    height: 72px;
+}
+.addPicture-show textarea{
+    position: absolute;
+    left: 0;
+    top:15px;
+    z-index: 10;
+    padding:0 30px 0 108px;
+    width: 100%;
+    height: 72px;
+    display: block;
+    text-align: left;
+    line-height: 22px;
+    font-size: 16px;
+    color: #242424;
+    overflow-y: auto;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+.themeCotent-pictureItem img,.themeCotent-pictureItem p{
+    margin:10px 0px;
+}
+.J_delete{
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    background: url(../../images/icon/delete.png) no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+
+.layer-picture .second-konw{background: #fff;}
+.layer-picture .second-konw a{color:#f45419;}
+.layer-picture p span{
+    line-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/***===========   预览模版样式 END ===========***/
+

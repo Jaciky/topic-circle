@@ -1,0 +1,234 @@
+html,body{
+	background: #eee;
+}
+
+/***======= 头部样式 BEGIN  =======***/
+
+.cf-header{
+	background: rgba(0, 0, 0,0.5);
+	overflow: hidden;
+}
+.cf-header-top{
+	overflow: hidden;
+}
+.cf-header-top img{
+	width: 20px;
+}
+.cf-header-top img:last-child{
+	width: 26px;
+}
+.cf-header-bottom{
+	height: 85px;
+}
+.cf-header-bottom-avatar{
+	width: 85px;
+	height: 85px;
+	border-radius: 4px;
+}
+.cf-header-bottom-right{
+	position: relative;
+	height: 85px;
+	color: #fff;
+}
+
+.cf-header-bottom-right{
+	padding-top:2px;
+	box-sizing: border-box;
+}
+.cf-header-bottom-right p:nth-child(2){
+	color:#c6c6c6;
+}
+.cf-header-bottom-right p:last-child{
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	padding-left: 20px;
+}
+.cf-header-bottom-right p:last-child:after{
+	content: "√";
+	position: absolute;
+	left: 0;
+	width:12px;
+	height: 12px;
+	text-align: center;
+	border:1px solid #fff;
+	border-radius: 50%;
+	font-size: 12px;
+}
+/***======= 头部样式 END  =======***/
+
+
+
+/***======= 发表圈子内容样式  BEGIN  =======***/
+
+.cf-seciton-sort{
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	box-sizing: border-box;
+	background: #fff;
+}
+.cf-section-circleList{
+    padding: 16px 12px;
+	background: #fff;
+	overflow: hidden;
+}
+.circleList-top{
+	height: 32px;
+}
+.circleList-top-avatar{
+	width: 32px;
+	height: 32px;
+}
+.circleList-center{
+	line-height: 22px;
+	overflow: hidden;
+}
+.circleList-center-picture{
+	margin-top:4px;
+}
+.circleList-center-picture img{
+	width: 32.5%;
+	float: left;
+}
+.circleList-center-picture img:nth-child(2){
+	margin:0 1.25%;
+}
+.circleList-bottom{
+	position: relative;
+	padding-top:15px;
+}
+.circleList-bottom:after{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #e5e5e5;
+}
+.circleList-bottom div{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.circleList-bottom i,.circleList-bottom span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.noMore{
+	text-align: center;
+}
+.createCircle{
+	position: fixed;
+	right: 14px;
+	bottom: 14px;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	border-radius: 50%;
+	background: #36b70a;
+	cursor: pointer;
+}
+.createCircle:after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left:-7px;
+	width: 16px;
+	height: 2px;
+	background: #fff;
+}
+.createCircle:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top:-7px;
+	width: 2px;
+	height: 16px;
+	background: #fff;
+}
+/***======= 发表圈子内容样式  END  =======***/
+
+
+
+
+/***======= 创建帖子样式  BEGIN  =======***/
+.cf-createCard{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1000;
+}
+.createCard-type{
+	margin:10% 0 10%;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 960px){
+	.createCard-type{
+		margin:40% 0 20%;
+	}
+	
+}
+
+.createCard-type li{
+	float: left;
+	width: 33.3333%;
+	height: 80px;
+	text-align: center;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.createCard-type li img{
+	width: 24px;
+	height: 30px;
+}
+
+.createCard-type li:nth-child(2) img{
+	width: 27px;
+	height: 32px;
+}
+.createCard-type li:nth-child(3) img{
+	width: 27px;
+	height: 31px;
+}
+.createCard-type li:nth-child(4){
+	margin-top:8px;
+}
+.createCard-type li:nth-child(4) p{
+	margin-top:4px;
+}
+.createCard-type li:nth-child(4) img{
+	width: 30px;
+	height: 20px;
+}
+.createCard-type li:nth-child(5) img{
+	width: 32px;
+	height: 32px;
+}
+.createCard-type li:nth-child(6) img{
+	width: 32px;
+	height: 33px;
+}
+
+.createCard-close{
+    width: 14px;
+    height: 14px;
+    margin: 72px auto 0;
+    background: url(../../images/icon/close.png) center no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+}
+
+
+
+/***======= 创建帖子样式  END  =======***/

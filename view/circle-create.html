@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>话题圈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/guid-page/circle-create.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header class="common-header">
+        <a href="javascript:;" class="header-left returnLeft J_prev">返回</a>
+        <h4>选择圈类型</h4>
+        <span class="header-right theme-green J_next">下一步</span>
+    </header>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--创建圈子类型-->
+                <div class="swiper-slide">
+                    <ul class="circleTypeList pAll15">
+                        <li>
+                            <img src="../images/circle/circleType/1.png" />
+                            <span>电影</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/2.png" />
+                            <span>电视剧</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/3.png" />
+                            <span>游戏</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/4.png" />
+                            <span>文学</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/5.png" />
+                            <span>明星</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/6.png" />
+                            <span>体育</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/7.png" />
+                            <span>生活</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/8.png" />
+                            <span>动漫</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/9.png" />
+                            <span>搞笑</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/10.png" />
+                            <span>星座</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/11.png" />
+                            <span>情感</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/12.png" />
+                            <span>地区</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/13.png" />
+                            <span>科技</span>
+                        </li>
+                        <li>
+                            <img src="../images/circle/circleType/14.png" />
+                            <span>其他</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--创建圈子－上传头像和圈子名称 -->
+                <div class="swiper-slide">
+                    <div class="uploadingAvatar">
+                        <div class="uploadingAvatar-picture"></div>
+                        <input type="file" accept="image/jpeg,image/png,image/gif,image/bmp" id="J_file"/>
+                        <p>添加圈头像</p>
+                    </div>
+                    <input type="input" class="circleName J_circleName" placeholder="圈子名称(限12字)" maxlength="12" />
+                    <input type="input" class="circleName J_circleIntroduce" placeholder="一句话介绍你的圈子 (限20字)" maxlength="12" />
+                </div>
+                <!--创建圈子－设置权限-->
+                <div class="swiper-slide">
+                    <div class="pAll15">
+                        <ol class="circlePermission">
+                            <li class="active">
+                                <img src="../images/icon/ic_open.png" class="fl" />
+                                <div class="fl circlePermission-right ml10">
+                                    <p class="fz16">公开圈</p>
+                                    <p class="theme-gray fz12">任何人可以直接加入圈子</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../images/icon/ic_closed.png" class="fl" />
+                                <div class="fl circlePermission-right ml10">
+                                    <p class="fz16">私密圈</p>
+                                    <p class="theme-gray fz12">加入圈子需要通过你的同意</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="circleConceal hide">
+                            <span class="fz16 fl">你的圈子可被搜索到</span>
+                            <span class="fr circleConceal-check"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--提示信息-->
+    <div class="J_promptInfo promptInfo">
+      <span></span>
+    </div>
+    <!--END-->
+</body>
+
+</html>
+<script type="text/javascript" src="../plugins/jquery.min.js"></script>
+<script type="text/javascript" src="../plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="../js/guid-page/circle-create.js"></script>

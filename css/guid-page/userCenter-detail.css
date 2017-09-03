@@ -1,0 +1,204 @@
+html,body{
+	background: #fafafa;
+}
+.headerMain{
+	background: #fff;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.tool{
+	width: 22px;
+	height: 22px;
+}
+.avatar{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin:0 auto;
+}
+.avatar img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.avatar-man:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	background: #fff url('../../images/icon/man.png') no-repeat  center;
+	background-size: 12px 12px;
+	border-radius: 50%;
+}
+.nav{
+	margin-top:6px;
+	overflow: hidden;
+}
+.nav li{
+	position:relative;
+	float: left;
+	width: 50%;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 16px;
+}
+.nav li.actvie{
+	color: #4c9afa;
+}
+.nav li.actvie:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -32px;
+	width: 64px;
+	height: 2px;
+	background-color: #4c9afa;
+}
+
+
+/***=======  动态样式 BEGIN =======***/
+
+.userTrends{
+	text-align: center;
+}
+
+.userTrends-shop{
+	overflow: hidden;
+}
+.userTrends-shop span{
+	height: 40px;
+	line-height: 40px;
+}	
+.shop-allTrends{
+	width: 85px;
+	color: #666;
+	border:1px solid #fafafa;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.shop-allTrends li{
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+}
+.shop-allTrends li:first-child{
+	display: block;
+	position: relative;
+	text-align: left;
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+.shop-allTrends li:nth-child(2){
+	color: #4c9afa;
+}
+
+.shop-allTrends li:first-child:after{
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-top: 1px solid #666;
+    transform: rotate(132deg);
+    transition: all .2s ease-out;
+}
+
+
+.shop-allTrends.active{
+	background: #fff;
+	border:1px solid #eaeaea;
+}
+.shop-allTrends.active li{display: block;}
+.shop-allTrends.active li:first-child{
+	border-bottom: 1px solid #e5e5e5;
+}
+.shop-allTrends.active li:first-child:after{
+	 top:19px;
+	 transform: rotate(-44deg);
+}
+
+.userTrends-reportDeatil{
+	position: absolute;
+	bottom: 26%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.userTrends-reportDeatil img{
+	width: 38px;
+	height: 40px;
+	display: block;
+	margin:0 auto 15px;
+}
+
+/***=======  动态样式 END =======***/
+
+
+
+/***=======  兴趣样式 BEGIN =======***/
+.userInterest{
+	padding-bottom: 20px !important;
+	background: #fff;
+	overflow: hidden;
+}
+.userInterest-circle{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.userInterest-circle span{
+	float: left;
+	width: 50%;
+}
+.userInterest-circle span:last-child{
+	position: relative;
+	text-align: right;
+	padding-right: 15px;
+	box-sizing: border-box;
+	color: #666;
+	font-size:12px;
+}
+.userInterest-circle span:last-child:after{
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-top: 1px solid #666;
+    transform: rotate(45deg);
+}
+
+.userInterest-circleList{
+
+}
+.userInterest-circleList li{
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+.userInterest-circleList li img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin:0 auto 10px;
+	border-radius: 4px;
+}
+
+
+/***=======  兴趣样式 END =======***/

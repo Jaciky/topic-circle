@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>话题圈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <style type="text/css">
+      html,body{
+        background: #eee;
+      }
+      .messageList{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #fff;
+        text-align: center;
+      }
+      .messageList li{
+        width: 50%;
+        float: left;
+      }
+      .noMessagePrice{
+        display: block;
+        width: 104px;
+        height: 104px;
+        background-size: 100% auto;
+        background-image: url(../images/icon/no_content.png);
+        background-position: 0 -724px;
+        margin:100px auto 30px;
+      }
+    </style>
+</head>
+
+<body>
+  <!--头部-->
+  <header class="common-header">
+    <a  href="javascript:history.back(-1)" >返回</a> 
+    <h4>消息列表</h4>
+    <span>清空</span>
+  </header>
+    
+  <section>
+    <ul class="messageList fz16">
+      <li class="theme-green">通知</li>
+      <li>私信</li>
+    </ul>
+    
+    <div class="noMessagePrice"></div>
+    <p class="theme-gray fz16 center">暂无消息</p>
+
+  </section>
+</body>
+
+</html>

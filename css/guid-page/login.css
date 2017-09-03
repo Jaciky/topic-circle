@@ -1,0 +1,135 @@
+html,body{
+	background: #fff;
+	overflow: hidden;
+}
+
+
+
+/*** ======= 入口样式  BEGIN  =======***/ 
+.wrapperEntry{
+	width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.wrapperEntry .wrapperLogin-login{
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+.wrapperEntry span{
+	background: #36b70a;
+	color: #fff;
+}
+.wrapperEntry-icon{
+	display: block;
+	width: 300px;
+	margin:30px auto;
+}
+
+/*** ======= 入口样式  END  =======***/ 
+
+
+
+
+/*** ======= 登录样式  BEGIN  =======***/
+
+
+.wrapperLogin{
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #eee;
+	box-sizing: border-box;
+	transform:translateX(100%);
+	transition: all .2s ease-out;
+}
+.wrapperLogin-area{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.wrapperLogin-area:after{
+	content: "";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border: solid #36b70a;
+    border-width: 0 0 2px 2px;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.wrapperLogin-area span{
+	width: 20%;
+	text-align: center;
+	color: #fff;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	background: #36b70a;
+	box-sizing: border-box;
+}
+.wrapperLogin-area select{
+    width: 80%;
+    padding-left: 20px;
+    font-size: 14px;
+    -webkit-appearance: none;  //设置select不是默认拉下样式
+    appearance: none;
+    line-height: 40px;
+    border: none;
+    background: #fff;
+    border-radius: 0;
+    border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+	box-sizing: border-box;
+}
+.J_login{
+	margin-top:10px;
+	font-size:16px;
+	color: #fff;
+	background: #36b70a;
+}
+.mtb-bfb{margin: 40px 0}
+.wrapperLogin-login{
+	margin-top:30px;
+	color: #252525;
+	font-size:14px;
+}
+.wrapperLogin-login span{
+	width: 48%;
+	text-align: center;
+	display: inline-block;
+}
+.wrapperLogin-login span img{
+	display: inline-block;
+	width: 26px;
+    height: 26px;
+    margin-top: 7px;
+}
+.wrapperLogin-close{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(204,204,204,.9);
+    padding: 15px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.wrapperLogin-close img{width: 22px;height: 22px;}
+
+.on{
+    transform:translateX(0);
+}
+
+
+/*** ======= 登录样式  END  =======***/

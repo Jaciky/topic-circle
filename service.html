@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <style type="text/css">
+    	*{
+    		margin:0;
+    		padding:0;
+    	}
+		html,body{
+			width: 100%;
+			background-color:#efeff4;
+		}
+		.header{
+			padding:30px 20px 15px;
+			text-align: center;
+			background:#fff;
+			overflow: hidden;
+			border-bottom: 1px solid #e5e5e7;
+		}
+		.header-name{
+			font-weight: 400;
+   			font-size: 18px;
+		}
+		.header-name img,.header-name span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.header-name img{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+		}
+		.header-corporation{
+			position: relative;
+			color: #8c8c8c;
+			font-size:14px;
+			margin:20px 0 ;
+		}
+
+		.header-corporation img{
+			width: 15px;
+			height: 15px;
+		}
+		.header-corporation img,	.header-corporation span{
+			vertical-align: middle;
+		}
+		.header-corporation:after{
+			content: " ";
+			display: inline-block;
+			height: 6px;
+			width: 6px;
+			border-width: 2px 2px 0 0;
+			border-color: #c8c8cd;
+			border-style: solid;
+			-webkit-transform: matrix(0.71,0.71,-0.71,0.71,0,0);
+			transform: matrix(0.71,0.71,-0.71,0.71,0,0);
+			vertical-align: middle;
+		}
+		.header-desc{
+			font-size: 14px;
+		    color: #8c8c8c;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 2;
+		    word-wrap: break-word;
+		    word-break: break-all;
+		}
+		.articleList{
+			width: 100%;
+			list-style-type: none;
+			background-size: #fff;
+			overflow: hidden;
+			border-bottom: 1px solid #e5e5e7;
+			margin-top: 10px;
+			background-color: #fff;
+
+		}
+		.articleList li{
+			width: 100%;
+			padding: 20px 10px;
+			overflow: hidden;
+			box-sizing: border-box;
+			border-top: 1px solid #e5e5e7;
+		}
+		.articleList-detail div{
+			 display: table-cell;
+		    vertical-align: top;
+		    float: none;
+		    width: auto;
+		}
+		
+		.articleList-detail h4{
+		  
+			font-weight: 400;
+			font-size: 18px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			word-wrap: break-word;
+			word-break: break-all;
+			line-height: 1.4;
+		}
+		.articleList-detail img{
+			float: left;
+			width: 110px;
+			height: 82px;
+			margin-right: 20px;
+		}
+		.articleList-time{
+			color: #8c8c8c;
+			font-size: 14px;
+			margin-top:15px;
+		}
+		.loading{
+			width: 100%;
+			text-align: center;
+			padding:10px 20px;
+			background: #eee;
+			display: none;
+		}
+    </style>
+</head>
+
+<body>
+
+   <header class="header">
+   		<div class="header-name">
+   			<img src="images/0.jpeg" />
+   			<span>张健老湿</span>
+   		</div>
+		<div class="header-corporation">
+			<img src="images/icon.png" />
+			<span>北京白纸教育有限公司</span>
+		</div>
+		<p class="header-desc">爆火视频节目《小罗恶搞》的作者，每晚8点钟更新完整版视频，全网只有这里才能看到哦!</p>
+   </header>
+   <section>
+   		<ol class="articleList">
+   			<li>
+   				<div class="articleList-detail">
+   					<img src="images/0.jpeg" />
+   					<div>
+   						<h4>网站开发</h4>
+   					</div>
+                 </div>
+                 <p class="articleList-time">10000元/次</p>
+   			</li>
+   			<li>
+   				<div class="articleList-detail">
+   					<img src="images/0.jpeg" />
+   					<div>
+   						<h4>网站开发APP</h4>
+   					</div>
+                 </div>
+                 <p class="articleList-time">10000元/次</p>
+   			</li>
+   			<li>
+   				<div class="articleList-detail">
+   					<img src="images/0.jpeg" />
+   					<div>
+   						<h4>网站开发</h4>
+   					</div>
+                 </div>
+                 <p class="articleList-time">10000元/次</p>
+   			</li>
+   		</ol>
+
+   		<div class="loading" id="J_loadingData">努力加载中。。。</div>
+   </section>
+</body>
+
+</html>
+<script type="text/javascript" src="zepto.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function(){
+	scrollLod();
+}
+//滚动到底部加载数据
+function scrollLod() {
+    //滚动条事件
+    $(window).scroll(function() {
+        //已经滚动到上面的页面高度
+        var sl_top = $(this).scrollTop();
+        //页面高度
+        var dm_Height = $(document).height();
+        //浏览器窗口高度
+        var wd_Height = $(this).height();
+        //此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
+	     if ($('#J_loadingData').css('display') == "none") {
+	            if (dm_Height == parseInt(sl_top + wd_Height)) {
+	                $('#J_loadingData').show();
+	                setTimeout(function(){
+	                	ajaxData();
+	                },2000)
+                    
+	            }
+
+	     }
+    });
+}
+//请求数据
+function ajaxData() {
+    $.get('index.json', function(resp) {
+        if (resp.code == 1) {
+            $('#J_loadingData').hide();
+            var liHTML = '';
+            $.each(resp.data.commodityList, function(index,ele) {
+              	liHTML += 	'<li>'
+			   				+'<div class="articleList-detail">'
+			   					+'<img src='+ele.articleImg+' />'
+			   					+'<div>'
+			   						+'<h4>'+ele.articleInfo+'</h4>'
+			   					+'</div>'
+			                 +'</div>'
+			                +' <p class="articleList-time">'+ele.articleTime+'</p>'
+			   			+'</li>';
+            })
+            $(".articleList").html(  $(".articleList").html()+liHTML   );
+        }
+    })
+}
+
+
+</script>
